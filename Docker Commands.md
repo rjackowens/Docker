@@ -14,7 +14,7 @@ docker start image_name
 docker run hello-world
 
 # Test Connectivity (Integrated Terminal)
-docker exec -i -t container_name ping 8.8.8.8
+docker exec -it container_name ping 8.8.8.8
 
 # View All Containers
 docker container ls -a
@@ -38,7 +38,7 @@ docker system prune -a
 Get-NetNat | Remove-NetNat
 
 # Create Network
-docker network create network_name
+docker network create network_name --driver <nat>
 
 # Select Specific Network
 docker run image_name --network=nat
@@ -51,3 +51,18 @@ docker network inspect network_name
 
 # Switch Container Base OS
 & 'C:\Program Files\Docker\Docker\DockerCli.exe' -SwitchDaemon
+
+# Login to Registry
+docker login
+
+# Logout of Registry
+docker logout
+
+# Clean up Containers
+docker container prune
+
+# Clean up Images
+docker image prune
+
+# View Output of Detached Containers
+docker logs container_name -f
