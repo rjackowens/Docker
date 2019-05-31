@@ -25,7 +25,7 @@ docker image ls -a
 # Docker System Info
 docker system info
 
-#Delete Container 
+# Delete Container 
 docker rm container_name
 
 # Delete Image
