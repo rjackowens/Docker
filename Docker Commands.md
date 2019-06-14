@@ -22,6 +22,12 @@ docker container ls -a
 # View All Images
 docker image ls -a
 
+# View All Volumes
+docker volume ls -a
+
+# Create Volume
+docker volume create
+
 # Docker System Info
 docker system info
 
@@ -66,3 +72,6 @@ docker image prune
 
 # View Output of Detached Containers
 docker logs container_name -f
+
+# Attach to Running Container
+docker attach container_name 
