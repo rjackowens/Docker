@@ -16,6 +16,12 @@ docker run hello-world
 # Test Connectivity (Integrated Terminal)
 docker exec -it container_name ping 8.8.8.8
 
+# Pull Image
+docker pull image_name:TAG
+
+# Search Images by Rating
+docker search --filter stars=50 image_name
+
 # View All Containers
 docker container ls -a
 
