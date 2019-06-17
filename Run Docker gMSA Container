@@ -1,0 +1,1 @@
+docker run -it --hostname gMSA_User --security-opt "credentialspec=file://gMSA_User.json" -e auth=Windows container_name powershell
