@@ -81,3 +81,6 @@ docker logs container_name -f
 
 # Attach to Running Container
 docker attach container_name 
+
+# Poll Docker Registry Repositories
+curl http://localhost:5000/v2/_catalog {"repositories":[]}
